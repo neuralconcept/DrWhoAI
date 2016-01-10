@@ -95,3 +95,13 @@ Person: Smart. | Doctor: i'm sorry .
  The main projects and code used are:
 * [TensorFlow translate seq2seq example](https://www.tensorflow.org/versions/master/tutorials/seq2seq/index.html) 
 * [Shakespeare translations using TensorFlow](https://github.com/tokestermw/tensorflow-shakespeare)
+
+Author
+
+Rafael del hoyo
+
+License
+
+Apache 2.0
+
+Future Plans
