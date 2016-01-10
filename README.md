@@ -51,7 +51,7 @@ Firs of all you should download the Dr Who trancriptions http://www.chakoteya.ne
 ### Problems encountered
 * Not reasoning, is some thing like random answare
 * Dificult to evaluate how good or bad is de model generated, not is enought to mantain one evaluation part of the corpus 
-* 
+
 ## Current example results
 Person Question/comment | Doctor Answer
  --- | ---
