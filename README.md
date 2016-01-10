@@ -1,6 +1,6 @@
 # DrWhoAI
 ## Introduction
-As a fan of **Dr Who** series and artificial intelligence loving my goal it is to create an artificial agent with the personality of Dr Who.
+As a fan of **Dr Who** series and artificial intelligence loviver my goal it is to create an artificial agent with the personality of Dr Who.
 
 The main technologies to be used are Deeplearning and other AGI technologies
 
@@ -15,26 +15,37 @@ The main
 
 ### How to Execute
 First download the TensorFlow library depending on your platform:
-```
-pip install https://storage.googleapis.com/tensorflow/mac/tensorflow-0.5.0-py2-none-any.whl # for mac
-pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl # for ubuntu
-```
 
-1. Grabs parallel data.
-2. Gets train, dev split.
-3. Builds vocabulary
-4. Converts parallel data into ids
+**Ubuntu/Linux 64-bit, CPU only:**
+``` bash
+$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.6.0-cp27-none-linux_x86_64.whl
+```
+**Ubuntu/Linux 64-bit, GPU enabled:**
+``` bash
+$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.6.0-cp27-none-linux_x86_64.whl
+```
+**Mac OS X, CPU only:**
+``` bash
+$ sudo easy_install --upgrade six
+$ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.6.0-py2-none-any.whl
+```
+First of all you should download the Dr Who trancriptions http://www.chakoteya.net/DoctorWho/. The Code will  
+``` 
+python -m DeepLearning.Utils.crawlerEpisodes
+``` 
+Then you should obtain the Dialogues of the Doctor, trying to get when the doctos is asked. We will obtain a CSV with the information structured.
+``` 
+python -m DeepLearning.Utils.getTrainingData
+``` 
+Gets train, dev split the CSV data generated, Builds vocabulary and Converts parallel data into ids
+``` 
+python -m DeepLearning.Utils.prepare_corpus
+```
 
 From the root directory:
-
-```
-python -m Deeplearning.get_data
-python -m tensorshake.prepare_corpus
-```
-
 Delete /cache to start anew.
 
-## Train
+### Train
 
 Use the example BASH script to train the model. This saves the check points in the `--train_dir` directory.
 If you run it again, the training process continues from the check point. To restart with fresh parameters,
@@ -43,13 +54,24 @@ simply delete/rename the check points.
 ```
 ./run.sh
 ```
-Firs of all you should download the Dr Who trancriptions http://www.chakoteya.net/DoctorWho/. The Code will  
-```bash
+### Evaluate
 
+Use a BASH script to execute several sentences examples to evaluate the model generated.
+```
+./run_example.sh
+```
+### Interactive 
+
+Use a BASH script to make a chatbot interactive with the Dr. Who
+```
+./run_decode.sh
+```
 ```
 
 ### Problems encountered
-* Not reasoning, is some thing like random answare
+The current main issues are the following:
+
+* Not reasoning, is some thing like random answer
 * Dificult to evaluate how good or bad is de model generated, not is enought to mantain one evaluation part of the corpus 
 
 ## Current example results
@@ -73,3 +95,13 @@ Person: Smart. | Doctor: i'm sorry .
  The main projects and code used are:
 * [TensorFlow translate seq2seq example](https://www.tensorflow.org/versions/master/tutorials/seq2seq/index.html) 
 * [Shakespeare translations using TensorFlow](https://github.com/tokestermw/tensorflow-shakespeare)
+
+Author
+
+Rafael del hoyo
+
+License
+
+Apache 2.0
+
+Future Plans
