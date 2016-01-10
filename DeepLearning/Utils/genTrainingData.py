@@ -61,7 +61,7 @@ for x in range(len(train)):
             doctor_file.write('\n')
            # print newline
 
-text_file = open(open(os.path.join(CACHE_DIR, "trainingDrWho.csv", "w"))
+text_file = open(os.path.join(CACHE_DIR, "trainingDrWho.csv", "w"))
 data = pd.DataFrame(lines, columns=['data'])
 text_file.write(data.to_csv( sep='\t', quoting =2))
 text_file.close()
