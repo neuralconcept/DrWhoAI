@@ -70,7 +70,7 @@ Use a BASH script to make a chatbot interactive with the Dr. Who
 ```
 ./run_decode.sh
 ```
-```
+
 
 ### Problems encountered
 The current main issues are the following:
@@ -96,10 +96,24 @@ Person: Smart. | Doctor: i'm sorry .
 Person: How do you mean ? | Doctor: cataclysm .
 
 
-### Based on
+### Based on other project
  The main projects and code used are:
 * [TensorFlow translate seq2seq example](https://www.tensorflow.org/versions/master/tutorials/seq2seq/index.html) 
 * [Shakespeare translations using TensorFlow](https://github.com/tokestermw/tensorflow-shakespeare)
+
+### Based on following articles
+
+http://arxiv.org/abs/1506.05869 Google did it first (we know) , then the more interesting improvements:
+
+http://arxiv.org/abs/1511.03729 This is an algorithm which better models language semantics in context (helps Google's model)
+
+http://arxiv.org/abs/1510.08565 This is a conversation model with attention with intention (more human like)
+
+http://arxiv.org/abs/1510.03055 This is showing how using MMI over seq2seq generates more relevant results for sentence generation.
+
+http://arxiv.org/abs/1511.06440 This improved supervised learning cost functions drastically.
+
+http://arxiv.org/abs/1512.08301 Another new type of network outperforming rnn's and lstm's.
 
 Author
 
