@@ -1,6 +1,10 @@
 # DrWhoAI
 ## Introduction
-As a fan of **Dr Who** series and artificial intelligence loviver my goal it is to create an artificial agent with the personality of Dr Who.
+As a fan of **Dr Who** series and artificial intelligence lover my goal it is to create an artificial agent with the personality of Dr Who.
+
+The idea of generating an equivalent artificial agent of any person through their interactions with the real world is not a new idea in literature. For example in the sci-fi serie Caprica a virtual agent was created based on all existing records about a person. That idea could be moved to a fiction characters, if we have enough information on how a person speaks and how it interacts with other characters, the fiction character could be generate an equivalent model to this character. The information, that we have in a book about character is usually small and complex to transfer to a models. Furthermore the television series and movies, full of dialogues among characters could generate primitive models of conversation. One of these early BOTs generated based on dialogs from movies can be seen in http://arxiv.org/pdf/1506.05869.pdf (July 2015).  This paper present a model generated through an algorithm based on deeplearning “seq2seq” getting meaningful answers. One of the problems is the training method, thousands of thousands of dialogues from diferents characters without any relation and context. My point is this, why not train with only one character dialogues. Dr. Who is one of the oldest television characters and the hero of many of us.
+The aim would be to generate an equivalent to Doctor model, based on all the dialogues of his years of issue.
+
 
 The main technologies to be used are Deeplearning and other AGI technologies
 
@@ -89,7 +93,8 @@ Person: What will UNIT do with the ghosts ? | Doctor: i don't know.
 Person: Here's what I don't understand. You did change the future. You stopped the Fisher King from returning . | Doctor: well , i 'm not sure . i 'm delighted to hear . i 'm delighted to hear .
 Person: And saying the chamber will open ? | Doctor: very well .
 Person: Smart. | Doctor: i'm sorry .
- Person: How do you mean ? | Doctor: cataclysm .
+Person: How do you mean ? | Doctor: cataclysm .
+
 
 ### Based on
  The main projects and code used are:
