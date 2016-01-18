@@ -12,7 +12,7 @@ The main technologies to be used are Deeplearning and other AGI technologies
 
 ## Deep Learning Approach
 
-The main 
+The main technology to be used in the first approach is Deeplearning and using Recurrent Neural Networks.
 
 ### LSTM Model
 
