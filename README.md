@@ -1,4 +1,4 @@
-# DrWhoAI aka Doctor WHO Aritificial Intelligent Bot
+# DrWhoAI aka Doctor Who Artificial Intelligent Bot
 ## Introduction
 As a fan of **Doctor Who** series and artificial intelligence lover my goal it is to create an artificial agent with the personality of Doctor Who.
 
